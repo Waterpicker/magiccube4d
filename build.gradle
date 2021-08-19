@@ -5,8 +5,20 @@ plugins {
 group 'com.superliminal'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.6
-targetCompatibility = 1.6
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jmonkeyengine:jme3-core:3.4.0-stable"
+    implementation "org.jmonkeyengine:jme3-desktop:3.4.0-stable"
+    implementation "org.jmonkeyengine:jme3-lwjgl:3.4.0-stable"
+    implementation "org.jmonkeyengine:jme3-testdata:3.4.0-stable"
+    implementation "org.jmonkeyengine:jme3-plugins:3.4.0-stable"
+}
 
 jar {
     manifest {

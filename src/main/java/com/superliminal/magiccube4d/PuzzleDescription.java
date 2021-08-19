@@ -10,7 +10,7 @@ package com.superliminal.magiccube4d;
  * NOTE: All returned arrays are immutable!!!!!
  * (They would be const if java had a way to express that.)
  */
-interface PuzzleDescription {
+public interface PuzzleDescription {
 
     public String getSchlafliProduct();
     public double getEdgeLength();
